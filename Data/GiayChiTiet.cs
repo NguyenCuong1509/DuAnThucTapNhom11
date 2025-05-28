@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Data.Models
+{
+    internal class GiayChiTiet
+    {
+        [Key]
+        public Guid GiayChiTietId { get; set; }
+
+        [Required]
+        public Guid GiayId { get; set; }
+
+        public Guid? ChatLieuId { get; set; }
+        public Guid? KichCoId { get; set; }
+        public Guid? MauSacId { get; set; }
+        public Guid? ThuongHieuId { get; set; }
+        public Guid? KieuDangId { get; set; }
+        public Guid? DeGiayId { get; set; }
+
+        public int? SoLuongCon { get; set; }
+        public string AnhGiay { get; set; }
+        public DateTime? NgayTao { get; set; }
+        public DateTime? NgaySua { get; set; }
+        public float Gia { get; set; }
+        public string MoTa { get; set; }
+        public bool TrangThai { get; set; }
+
+        public virtual Giay Giay { get; set; }
+    }
+}
