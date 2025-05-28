@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Source\\Repos\\DuAnThucTapNhom11\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\OneDrive\\Desktop\\TTX\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\Asus\\Source\\Repos\\DuAnThucTapNhom11\\Data\\Data.csproj",
+      "projectPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\TTX\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Source\\Repos\\DuAnThucTapNhom11\\Data\\obj\\",
+      "outputPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\TTX\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

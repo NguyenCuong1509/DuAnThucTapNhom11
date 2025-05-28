@@ -1,13 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\DuAnThucTapNhom11\\",
+  "WorkspaceRootPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\TTX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\asus\\source\\repos\\duanthuctapnhom11\\data\\models\\giohangs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|solutionrelative:data\\models\\giohangs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\asus\\onedrive\\desktop\\ttx\\data\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|solutionrelative:data\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\asus\\source\\repos\\duanthuctapnhom11\\data\\models\\chatlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\GioHangs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\asus\\onedrive\\desktop\\ttx\\data\\models\\chatlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|solutionrelative:data\\models\\chatlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -20,15 +23,15 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\Voucher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\asus\\source\\repos\\duanthuctapnhom11\\data\\models\\degiay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\asus\\onedrive\\desktop\\ttx\\data\\models\\degiay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|solutionrelative:data\\models\\degiay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\asus\\source\\repos\\duanthuctapnhom11\\data\\models\\mausac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\asus\\onedrive\\desktop\\ttx\\data\\models\\mausac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|solutionrelative:data\\models\\mausac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\asus\\source\\repos\\duanthuctapnhom11\\data\\models\\thuonghieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\asus\\onedrive\\desktop\\ttx\\data\\models\\thuonghieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|solutionrelative:data\\models\\thuonghieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -60,23 +63,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GioHang.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\TTX\\Data\\Models\\GioHang.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\GioHang.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\TTX\\Data\\Models\\GioHang.cs",
+              "RelativeToolTip": "Data\\Models\\GioHang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T13:58:19.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "GioHangs.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\GioHangs.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\GioHangs.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\GioHangs.cs",
               "ToolTip": "C:\\Users\\Asus\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\GioHangs.cs",
-              "RelativeToolTip": "Data\\Models\\GioHangs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\GioHangs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T13:44:25.264Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "DeGiay.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\DeGiay.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\TTX\\Data\\Models\\DeGiay.cs",
               "RelativeDocumentMoniker": "Data\\Models\\DeGiay.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\DeGiay.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\TTX\\Data\\Models\\DeGiay.cs",
               "RelativeToolTip": "Data\\Models\\DeGiay.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -84,24 +100,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ChatLieu.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\ChatLieu.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\TTX\\Data\\Models\\ChatLieu.cs",
               "RelativeDocumentMoniker": "Data\\Models\\ChatLieu.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\ChatLieu.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\TTX\\Data\\Models\\ChatLieu.cs",
               "RelativeToolTip": "Data\\Models\\ChatLieu.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T07:43:59.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T07:43:59.84Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MauSac.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\MauSac.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\TTX\\Data\\Models\\MauSac.cs",
               "RelativeDocumentMoniker": "Data\\Models\\MauSac.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\MauSac.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\TTX\\Data\\Models\\MauSac.cs",
               "RelativeToolTip": "Data\\Models\\MauSac.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -109,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "HoaDonChiTiet.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\HoaDonChiTiet.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\HoaDonChiTiet.cs",
@@ -121,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "HoaDon.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\HoaDon.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\HoaDon.cs",
@@ -132,11 +147,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ThuongHieu.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\ThuongHieu.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\TTX\\Data\\Models\\ThuongHieu.cs",
               "RelativeDocumentMoniker": "Data\\Models\\ThuongHieu.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\ThuongHieu.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\TTX\\Data\\Models\\ThuongHieu.cs",
               "RelativeToolTip": "Data\\Models\\ThuongHieu.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -144,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Voucher.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\Voucher.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\Voucher.cs",
@@ -163,10 +178,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             }
           ]
         }
