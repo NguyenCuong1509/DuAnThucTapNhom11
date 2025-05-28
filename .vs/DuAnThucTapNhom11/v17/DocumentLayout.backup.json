@@ -1,7 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\admin\\source\\repos\\duanthuctapnhom11\\data\\models\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|solutionrelative:data\\models\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\admin\\source\\repos\\duanthuctapnhom11\\data\\models\\hoadonchitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|solutionrelative:data\\models\\hoadonchitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\admin\\source\\repos\\duanthuctapnhom11\\data\\models\\voucher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|solutionrelative:data\\models\\voucher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\admin\\source\\repos\\duanthuctapnhom11\\data\\models\\degiay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|solutionrelative:data\\models\\degiay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\admin\\source\\repos\\duanthuctapnhom11\\data\\models\\thuonghieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|solutionrelative:data\\models\\thuonghieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\admin\\source\\repos\\duanthuctapnhom11\\data\\models\\mausac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|solutionrelative:data\\models\\mausac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|c:\\users\\admin\\source\\repos\\duanthuctapnhom11\\data\\models\\chatlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBDE5AB3-455A-4786-ABBC-8A78423C823C}|Data\\Data.csproj|solutionrelative:data\\models\\chatlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +38,96 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ThuongHieu.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\ThuongHieu.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\ThuongHieu.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\ThuongHieu.cs",
+              "RelativeToolTip": "Data\\Models\\ThuongHieu.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T07:44:10.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeGiay.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\DeGiay.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\DeGiay.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\DeGiay.cs",
+              "RelativeToolTip": "Data\\Models\\DeGiay.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T07:44:07.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChatLieu.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\ChatLieu.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\ChatLieu.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\ChatLieu.cs",
+              "RelativeToolTip": "Data\\Models\\ChatLieu.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T07:43:59.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MauSac.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\MauSac.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\MauSac.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\MauSac.cs",
+              "RelativeToolTip": "Data\\Models\\MauSac.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T07:43:51.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HoaDonChiTiet.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\HoaDonChiTiet.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\HoaDonChiTiet.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\HoaDonChiTiet.cs",
+              "RelativeToolTip": "Data\\Models\\HoaDonChiTiet.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvx0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T07:43:23.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HoaDon.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\HoaDon.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\HoaDon.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\HoaDon.cs",
+              "RelativeToolTip": "Data\\Models\\HoaDon.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T07:43:03.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Voucher.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\Voucher.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\Voucher.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DuAnThucTapNhom11\\Data\\Models\\Voucher.cs",
+              "RelativeToolTip": "Data\\Models\\Voucher.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T07:42:31.021Z"
             }
           ]
         }
