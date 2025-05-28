@@ -1,16 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Data.Models
 {
-    internal class GioHangChiTiet
+    public class GioHangChiTiet
     {
         public Guid GioHangChiTietId { get; set; }
-        public Guid? GioHangId { get; set; }
-        public Guid? GiayChiTietId { get; set; }
+
+        public Guid GioHangId { get; set; }
+
+        public Guid GiayChiTietId { get; set; }
+
+        public int SoLuongSanPham { get; set; }
+
+        public decimal Gia { get; set; }
+
+        // Tính toán tự động tránh lưu dữ liệu thừa hoặc sai lệch
+        public decimal ThanhTien => Gia * SoLuongSanPham;
+
+        public DateTime NgayTao { get; set; } = DateTime.Now;
+
+        public DateTime NgayCapNhat { get; set; } = DateTime.Now;
+
         public bool TrangThai { get; set; }
     }
 }
