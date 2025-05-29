@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Data.Models
 {
-    internal class ChatLieu
+    public class ChatLieu
     {
         [Key]
         public Guid ChatLieuId { get; set; }

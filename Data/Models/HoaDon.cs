@@ -37,6 +37,7 @@ namespace Data.Models
 
         [MaxLength(200)]
         public string GhiChu { get; set; }
+
     }
 
 }
