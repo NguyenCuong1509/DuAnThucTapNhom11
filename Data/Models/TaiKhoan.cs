@@ -23,9 +23,7 @@ namespace Data.Models
         [RegularExpression(@"^[a-zA-Z\s]+$", ErrorMessage = "Họ và tên không hợp lệ")]
         public string Hovaten { get; set; }
 
-        [Required]
-        [RegularExpression(@"^(Nam|Nữ)$", ErrorMessage = "Giới tính phải là Nam hoặc Nữ")]
-        public string Gioitinh { get; set; }
+        public bool Gioitinh { get; set; }
 
         [Required]
         [RegularExpression(@"^0\d{9,10}$", ErrorMessage = "Số điện thoại không hợp lệ")]
@@ -43,6 +41,11 @@ namespace Data.Models
         public DateTime Ngaytaotaikhoan { get; set; }
 
         public int Trangthai { get; set; }
+
+        public virtual ICollection<GiayChiTiet> GiayChiTiets { get; set; } = new List<GiayChiTiet>();
+        public virtual ICollection<TaiKhoan_ChucVu> TaiKhoan_ChucVus { get; set; } = new List<TaiKhoan_ChucVu>();
+        public virtual ICollection<Voucher> ? Vouchers  { get; set; } = new List<Voucher>();
+        public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
     }
 
 }

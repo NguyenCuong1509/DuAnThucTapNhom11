@@ -14,7 +14,9 @@ namespace Data.Models
         public DateTime NgayTaoGioHang { get; set; }
         public DateTime NgayCapNhatCuoiCung { get; set; }
         public bool TrangThai { get; set; }
-        public Guid? KhachHangId { get; set; }
-        public Guid? GiamGiaId { get; set; }
+        public Guid KhachHangId { get; set; }
+        public virtual KhachHang KhachHang { get; set; }
+        public virtual ICollection<GioHangChiTiet> GioHangChiTiets { get; set; } = new List<GioHangChiTiet>();
+
     }
 }

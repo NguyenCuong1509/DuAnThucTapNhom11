@@ -1,9 +1,11 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Data.Models
 {
     public class GioHangChiTiet
     {
+        [Key]
         public Guid GioHangChiTietId { get; set; }
 
         public Guid GioHangId { get; set; }
@@ -22,5 +24,7 @@ namespace Data.Models
         public DateTime NgayCapNhat { get; set; } = DateTime.Now;
 
         public bool TrangThai { get; set; }
+        public virtual GioHang GioHang { get; set; }
+        public virtual GiayChiTiet GiayChiTiet { get; set; }
     }
 }
