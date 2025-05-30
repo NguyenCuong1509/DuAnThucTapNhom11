@@ -23,7 +23,8 @@ namespace Data.Models
         public float Gia { get; set; }
 
         // Navigation properties (optional)
-        public HoaDon HoaDon { get; set; }
+        public HoaDon HoaDons { get; set; }
+        public GiayChiTiet GiayChiTiets { get; set; }
     }
 
 }

@@ -6,11 +6,12 @@ namespace Data.Models
 {
     public class KhachHang
     {
+        [Key]
         public Guid KhachHangId { get; set; } = Guid.NewGuid();
 
         [Required(ErrorMessage = "Họ tên không được để trống")]
         [StringLength(50, ErrorMessage = "Họ tên tối đa 50 ký tự")]
-        [RegularExpression(@"^[a-zA-Z\s]+$", ErrorMessage = "Họ tên chỉ chứa chữ cái và khoảng trắng")]
+        [RegularExpression(@"^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s]+$", ErrorMessage = "Họ tên chỉ chứa chữ cái và khoảng trắng")]
         public string HoTen { get; set; }
 
         [Required(ErrorMessage = "Số điện thoại không được để trống")]
@@ -22,12 +23,12 @@ namespace Data.Models
         public string Email { get; set; }
 
         public DateTime NgaySinh { get; set; }
-        public Guid? DiaChiId { get; set; }
-
         public bool TrangThai { get; set; }
         public DateTime NgayTao { get; set; }
         public DateTime NgayCapNhatCuoiCung { get; set; }
 
+        public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
+        public virtual ICollection<DiaChiKhachHang> DiaChiKhachHangs { get; set; } = new List<DiaChiKhachHang>();
         public virtual ICollection<GioHang> GioHangs { get; set; } = new List<GioHang>();
     }
 }

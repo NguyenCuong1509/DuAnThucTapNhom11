@@ -12,10 +12,9 @@ namespace Data.Models
     {
         [Key]
         public Guid ChucVuId { get; set; }
-
-        [Required(ErrorMessage = "Tên chức vụ là bắt buộc")]
-        [StringLength(50, ErrorMessage = "Tên chức vụ không được vượt quá 50 ký tự")]
-        [RegularExpression(@"^[a-zA-Z\s]+$", ErrorMessage = "Tên chức vụ chỉ được chứa chữ cái và khoảng trắng")]
+        [Required]
+        [StringLength(50)]
+        [RegularExpression(@"^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠƯàáâãèéêìíòóôõùúăđĩũơưẠ-ỹ\s0-9]+$", ErrorMessage = "Tên chỉ được chứa chữ cái tiếng Việt, số và khoảng trắng")]
         public string TenChucVu { get; set; }
 
         [StringLength(200, ErrorMessage = "Mô tả không được vượt quá 200 ký tự")]
@@ -23,6 +22,7 @@ namespace Data.Models
 
         [Required]
         public int TrangThai { get; set; }
+        public virtual ICollection<TaiKhoan_ChucVu> TaiKhoan_ChucVus { get; set; } = new List<TaiKhoan_ChucVu>();
     }
 
 }

@@ -7,20 +7,19 @@ using System.Threading.Tasks;
 
 namespace Data.Models
 {
-    internal class TheLoaiGiay
+    public class TheLoaiGiay
     {
         [Key]
-        public Guid MauSacId { get; set; }
+        public Guid TheLoaiGiayId { get; set; }
 
         [Required]
         [StringLength(50)]
         [RegularExpression(@"^[a-zA-Z0-9\s]+$")]
-        public string TenMau { get; set; }
+        public string TenTheLoai { get; set; }
 
         public string MoTa { get; set; }
 
         public bool TrangThai { get; set; }
-
-        public Guid TaiKhoanId { get; set; }
+        public virtual ICollection<GiayChiTiet> GiayChiTiets { get; set; } = new List<GiayChiTiet>();
     }
 }

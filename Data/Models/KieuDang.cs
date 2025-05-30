@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace Data.Models
 {
-    internal class KieuDang
+    public class KieuDang
     {
+        [Key]
         public Guid KieuDangId { get; set; }
         [Required]
         [StringLength(50)]
@@ -16,6 +17,6 @@ namespace Data.Models
         public string TenKieuDang { get; set; }
         public string MoTa { get; set; }
         public bool TrangThai { get; set; }
-        public Guid TaiKhoanId { get; set; }
+        public virtual ICollection<GiayChiTiet> GiayChiTiets { get; set; } = new List<GiayChiTiet>();
     }
 }

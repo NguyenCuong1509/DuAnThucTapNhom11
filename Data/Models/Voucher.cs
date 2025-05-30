@@ -9,13 +9,14 @@ namespace Data.Models
 {
     public class Voucher
     {
+        private Guid voucherId;
+
         [Key]
-        [MaxLength(20)]
-        public string VoucherId { get; set; } = Guid.NewGuid().ToString("N").Substring(0, 20);
+        public Guid VoucherId { get; set; }
 
         [Required]
-        [MaxLength(50)]
-        [RegularExpression(@"^[a-zA-Z0-9\s]+$", ErrorMessage = "Tên không hợp lệ.")]
+        [StringLength(50)]
+        [RegularExpression(@"^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠƯàáâãèéêìíòóôõùúăđĩũơưẠ-ỹ\s0-9]+$", ErrorMessage = "Tên chỉ được chứa chữ cái tiếng Việt, số và khoảng trắng")]
         public string TenVoucher { get; set; }
 
         [Required]
@@ -40,6 +41,8 @@ namespace Data.Models
             if (NgayKetThuc <= NgayBatDau)
                 throw new Exception("Ngày kết thúc phải sau ngày bắt đầu.");
         }
+        public virtual TaiKhoan TaiKhoan { get; set; }
+        public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
     }
 
 }

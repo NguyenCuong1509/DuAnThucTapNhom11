@@ -5,15 +5,17 @@ namespace Data.Models
 {
     public class KichCo
     {
+        [Key]
         public Guid KichCoId { get; set; }
 
-        [Required(ErrorMessage = "Tên kích cỡ không được để trống")]
-        [StringLength(50, ErrorMessage = "Tên kích cỡ tối đa 50 ký tự")]
-        [RegularExpression(@"^[a-zA-Z0-9\s]+$", ErrorMessage = "Tên kích cỡ không được chứa ký tự đặc biệt")]
+        [Required]
+        [StringLength(50)]
+        [RegularExpression(@"^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠƯàáâãèéêìíòóôõùúăđĩũơưẠ-ỹ\s0-9]+$", ErrorMessage = "Tên chỉ được chứa chữ cái tiếng Việt, số và khoảng trắng")]
         public string TenKichCo { get; set; }
 
         public string MoTa { get; set; }
 
         public bool TrangThai { get; set; }
+        public virtual ICollection<GiayChiTiet> GiayChiTiets { get; set; } = new List<GiayChiTiet>();
     }
 }
