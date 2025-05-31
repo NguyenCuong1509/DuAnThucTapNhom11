@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Identity.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -14,12 +15,10 @@ namespace Data.Models
         public Guid HoaDonId { get; set; } = Guid.NewGuid();
 
         public Guid TaiKhoanId { get; set; }
-
-        [ForeignKey("Voucher")]
-        public Guid ? VoucherId { get; set; }
-        public Guid KhachHangId { get; set; }
-        public Guid DiaChiKhachHangId { get; set; }
+        public Guid ? KhachHangId { get; set; }
         public Guid HinhThucThanhToanId { get; set; }
+        public Guid ? VoucherId { get; set; }
+
 
         [MaxLength(50)]
         public string TenCuaKhachHang { get; set; }
@@ -39,12 +38,13 @@ namespace Data.Models
 
         [MaxLength(200)]
         public string GhiChu { get; set; }
-        public virtual Voucher Voucher { get; set; }
-        public virtual TaiKhoan TaiKhoan { get; set; }
-        public virtual HinhThucThanhToan HinhThucThanhToan { get; set; }
-        public virtual KhachHang KhachHang { get; set; }
-        public virtual DiaChiKhachHang DiaChiKhachHang { get; set; }
-        public virtual ICollection<HoaDonChiTiet> HoaDonChiTiets { get; set; } = new List<HoaDonChiTiet>();
+
+        public Voucher ? voucher { get; set; }
+        public TaiKhoan taiKhoan { get; set; }
+        public HinhThucThanhToan hinhThucThanhToan {  get; set; }
+        public KhachHang ? khachHang { get; set; }
+        public virtual ICollection<HoaDonChiTiet> HoaDonChiTietsId { get; set; } = new List<HoaDonChiTiet>();
+
 
     }
 

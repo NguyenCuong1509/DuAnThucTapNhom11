@@ -20,7 +20,7 @@ namespace Data.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=DELL\SQLEXPRESS;Initial Catalog=DuanNhom11;Trusted_Connection=True;Integrated Security=True;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer(@"Data Source=.;Initial Catalog=DuanNhom11;Trusted_Connection=True;Integrated Security=True;TrustServerCertificate=True");
 
         }
 
@@ -54,32 +54,32 @@ namespace Data.Models
                 .HasForeignKey(tc => tc.ChucVuId)
                 .OnDelete(DeleteBehavior.Cascade);
             modelBuilder.Entity<HoaDon>()
-        .HasOne(h => h.TaiKhoan)
-        .WithMany(t => t.HoaDons)
-        .HasForeignKey(h => h.TaiKhoanId)
-        .OnDelete(DeleteBehavior.Restrict); // Tránh ON DELETE CASCADE
+
+                .HasOne(h => h.taiKhoan)
+                .WithMany(t => t.HoaDons)
+                .HasForeignKey(h => h.TaiKhoanId)
+                .OnDelete(DeleteBehavior.Restrict); 
 
             modelBuilder.Entity<HoaDon>()
-                .HasOne(h => h.KhachHang)
-                .WithMany()
+                .HasOne(h => h.khachHang)
+                .WithMany(t => t.HoaDons)
+
                 .HasForeignKey(h => h.KhachHangId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<HoaDon>()
-                .HasOne(h => h.HinhThucThanhToan)
-                .WithMany()
+
+                .HasOne(h => h.hinhThucThanhToan)
+                .WithMany(t => t.HoaDons)
+
                 .HasForeignKey(h => h.HinhThucThanhToanId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<HoaDon>()
-                .HasOne(h => h.DiaChiKhachHang)
-                .WithMany()
-                .HasForeignKey(h => h.DiaChiKhachHangId)
-                .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<HoaDon>()
-                .HasOne(h => h.Voucher)
-                .WithMany()
+                .HasOne(h => h.voucher)
+                .WithMany(t => t.HoaDons) 
+
                 .HasForeignKey(h => h.VoucherId)
                 .OnDelete(DeleteBehavior.SetNull);
 

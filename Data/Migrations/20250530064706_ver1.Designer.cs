@@ -4,6 +4,7 @@ using Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(DbContextApp))]
-    partial class DbContextAppModelSnapshot : ModelSnapshot
+    [Migration("20250530064706_ver1")]
+    partial class ver1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -406,7 +409,6 @@ namespace Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("KhachHangId")
-
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("NgayNhanHang")
@@ -893,10 +895,8 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.HoaDon", b =>
                 {
-
                     b.HasOne("Data.Models.HinhThucThanhToan", "hinhThucThanhToan")
                         .WithMany("HoaDons")
-
                         .HasForeignKey("HinhThucThanhToanId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -907,7 +907,6 @@ namespace Data.Migrations
                         .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("Data.Models.TaiKhoan", "taiKhoan")
-
                         .WithMany("HoaDons")
                         .HasForeignKey("TaiKhoanId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -925,7 +924,6 @@ namespace Data.Migrations
                     b.Navigation("taiKhoan");
 
                     b.Navigation("voucher");
-
                 });
 
             modelBuilder.Entity("Data.Models.HoaDonChiTiet", b =>
@@ -937,9 +935,7 @@ namespace Data.Migrations
                         .IsRequired();
 
                     b.HasOne("Data.Models.HoaDon", "HoaDons")
-
                         .WithMany("HoaDonChiTietsId")
-
                         .HasForeignKey("HoaDonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1030,9 +1026,7 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.HoaDon", b =>
                 {
-
                     b.Navigation("HoaDonChiTietsId");
-
                 });
 
             modelBuilder.Entity("Data.Models.KhachHang", b =>

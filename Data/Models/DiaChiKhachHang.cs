@@ -21,7 +21,7 @@ namespace Data.Models
         public bool TrangThai { get; set; } = true;
 
         public KhachHang KhachHang { get; set; }
-        public virtual ICollection<HoaDon> HoaDon { get; set; } = new List<HoaDon>();
+
 
     }
 }
