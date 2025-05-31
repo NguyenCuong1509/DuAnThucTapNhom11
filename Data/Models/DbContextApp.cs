@@ -54,6 +54,7 @@ namespace Data.Models
                 .HasForeignKey(tc => tc.ChucVuId)
                 .OnDelete(DeleteBehavior.Cascade);
             modelBuilder.Entity<HoaDon>()
+
                 .HasOne(h => h.taiKhoan)
                 .WithMany(t => t.HoaDons)
                 .HasForeignKey(h => h.TaiKhoanId)
@@ -62,18 +63,23 @@ namespace Data.Models
             modelBuilder.Entity<HoaDon>()
                 .HasOne(h => h.khachHang)
                 .WithMany(t => t.HoaDons)
+
                 .HasForeignKey(h => h.KhachHangId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<HoaDon>()
+
                 .HasOne(h => h.hinhThucThanhToan)
                 .WithMany(t => t.HoaDons)
+
                 .HasForeignKey(h => h.HinhThucThanhToanId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<HoaDon>()
+
                 .HasOne(h => h.voucher)
                 .WithMany(t => t.HoaDons) 
+
                 .HasForeignKey(h => h.VoucherId)
                 .OnDelete(DeleteBehavior.SetNull);
 
