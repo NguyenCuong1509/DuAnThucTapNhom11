@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Data.Migrations
 {
     /// <inheritdoc />
-    public partial class DbNhom : Migration
+    public partial class demo : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -179,7 +179,7 @@ namespace Data.Migrations
                     Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Hovaten = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Gioitinh = table.Column<bool>(type: "bit", nullable: false),
+                    Gioitinh = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Sdt = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Diachi = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -435,10 +435,9 @@ namespace Data.Migrations
                 {
                     HoaDonId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     TaiKhoanId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    VoucherId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    KhachHangId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    DiaChiKhachHangId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    KhachHangId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     HinhThucThanhToanId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    VoucherId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     TenCuaKhachHang = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     SDTCuaKhachHang = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     EmailCuaKhachHang = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
@@ -446,11 +445,7 @@ namespace Data.Migrations
                     NgayNhanHang = table.Column<DateTime>(type: "datetime2", nullable: false),
                     TongTienSauKhiGiam = table.Column<float>(type: "real", nullable: false),
                     TrangThai = table.Column<bool>(type: "bit", nullable: false),
-                    GhiChu = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    DiaChiKhachHangId1 = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    HinhThucThanhToanId1 = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    KhachHangId1 = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    VoucherId1 = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    GhiChu = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -461,11 +456,6 @@ namespace Data.Migrations
                         principalTable: "KhachHang",
                         principalColumn: "KhachHangId",
                         onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_HoaDons_KhachHang_KhachHangId1",
-                        column: x => x.KhachHangId1,
-                        principalTable: "KhachHang",
-                        principalColumn: "KhachHangId");
                     table.ForeignKey(
                         name: "FK_HoaDons_TaiKhoans_TaiKhoanId",
                         column: x => x.TaiKhoanId,
@@ -479,32 +469,11 @@ namespace Data.Migrations
                         principalColumn: "VoucherId",
                         onDelete: ReferentialAction.SetNull);
                     table.ForeignKey(
-                        name: "FK_HoaDons_Vouchers_VoucherId1",
-                        column: x => x.VoucherId1,
-                        principalTable: "Vouchers",
-                        principalColumn: "VoucherId");
-                    table.ForeignKey(
-                        name: "FK_HoaDons_diaChiKhachHangs_DiaChiKhachHangId",
-                        column: x => x.DiaChiKhachHangId,
-                        principalTable: "diaChiKhachHangs",
-                        principalColumn: "DiaChiKhachHangId",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_HoaDons_diaChiKhachHangs_DiaChiKhachHangId1",
-                        column: x => x.DiaChiKhachHangId1,
-                        principalTable: "diaChiKhachHangs",
-                        principalColumn: "DiaChiKhachHangId");
-                    table.ForeignKey(
                         name: "FK_HoaDons_hinhThucThanhToans_HinhThucThanhToanId",
                         column: x => x.HinhThucThanhToanId,
                         principalTable: "hinhThucThanhToans",
                         principalColumn: "HinhThucThanhToanId",
                         onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_HoaDons_hinhThucThanhToans_HinhThucThanhToanId1",
-                        column: x => x.HinhThucThanhToanId1,
-                        principalTable: "hinhThucThanhToans",
-                        principalColumn: "HinhThucThanhToanId");
                 });
 
             migrationBuilder.CreateTable(
@@ -655,34 +624,14 @@ namespace Data.Migrations
                 column: "HoaDonId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_HoaDons_DiaChiKhachHangId",
-                table: "HoaDons",
-                column: "DiaChiKhachHangId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_HoaDons_DiaChiKhachHangId1",
-                table: "HoaDons",
-                column: "DiaChiKhachHangId1");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_HoaDons_HinhThucThanhToanId",
                 table: "HoaDons",
                 column: "HinhThucThanhToanId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_HoaDons_HinhThucThanhToanId1",
-                table: "HoaDons",
-                column: "HinhThucThanhToanId1");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_HoaDons_KhachHangId",
                 table: "HoaDons",
                 column: "KhachHangId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_HoaDons_KhachHangId1",
-                table: "HoaDons",
-                column: "KhachHangId1");
 
             migrationBuilder.CreateIndex(
                 name: "IX_HoaDons_TaiKhoanId",
@@ -693,11 +642,6 @@ namespace Data.Migrations
                 name: "IX_HoaDons_VoucherId",
                 table: "HoaDons",
                 column: "VoucherId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_HoaDons_VoucherId1",
-                table: "HoaDons",
-                column: "VoucherId1");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TaiKhoan_ChucVus_ChucVuId",
@@ -718,6 +662,9 @@ namespace Data.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "diaChiKhachHangs");
+
             migrationBuilder.DropTable(
                 name: "GiayDotGiamGias");
 
@@ -773,19 +720,16 @@ namespace Data.Migrations
                 name: "ThuongHieus");
 
             migrationBuilder.DropTable(
-                name: "Vouchers");
+                name: "KhachHang");
 
             migrationBuilder.DropTable(
-                name: "diaChiKhachHangs");
+                name: "Vouchers");
 
             migrationBuilder.DropTable(
                 name: "hinhThucThanhToans");
 
             migrationBuilder.DropTable(
                 name: "TaiKhoans");
-
-            migrationBuilder.DropTable(
-                name: "KhachHang");
         }
     }
 }

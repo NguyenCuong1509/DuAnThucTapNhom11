@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(DbContextApp))]
-    [Migration("20250530064706_ver1")]
-    partial class ver1
+    [Migration("20250531041855_demo")]
+    partial class demo
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -598,8 +598,9 @@ namespace Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Gioitinh")
-                        .HasColumnType("bit");
+                    b.Property<string>("Gioitinh")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Hovaten")
                         .IsRequired()
@@ -806,7 +807,7 @@ namespace Data.Migrations
                         .IsRequired();
 
                     b.HasOne("Data.Models.TaiKhoan", "TaiKhoan")
-                        .WithMany("GiayChiTiets")
+                        .WithMany()
                         .HasForeignKey("TaikhoanId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -967,7 +968,7 @@ namespace Data.Migrations
             modelBuilder.Entity("Data.Models.Voucher", b =>
                 {
                     b.HasOne("Data.Models.TaiKhoan", "TaiKhoan")
-                        .WithMany("Vouchers")
+                        .WithMany()
                         .HasForeignKey("TaikhoanId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1055,13 +1056,9 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.TaiKhoan", b =>
                 {
-                    b.Navigation("GiayChiTiets");
-
                     b.Navigation("HoaDons");
 
                     b.Navigation("TaiKhoan_ChucVus");
-
-                    b.Navigation("Vouchers");
                 });
 
             modelBuilder.Entity("Data.Models.TheLoaiGiay", b =>
