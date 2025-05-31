@@ -9,7 +9,6 @@ namespace Data.Models
 {
     public class Voucher
     {
-
         [Key]
         public Guid VoucherId { get; set; }
 

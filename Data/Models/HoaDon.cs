@@ -13,10 +13,12 @@ namespace Data.Models
     {
         [Key]
         public Guid HoaDonId { get; set; } = Guid.NewGuid();
+
         public Guid TaiKhoanId { get; set; }
         public Guid ? KhachHangId { get; set; }
         public Guid HinhThucThanhToanId { get; set; }
         public Guid ? VoucherId { get; set; }
+
 
         [MaxLength(50)]
         public string TenCuaKhachHang { get; set; }
@@ -36,11 +38,13 @@ namespace Data.Models
 
         [MaxLength(200)]
         public string GhiChu { get; set; }
+
         public Voucher ? voucher { get; set; }
         public TaiKhoan taiKhoan { get; set; }
         public HinhThucThanhToan hinhThucThanhToan {  get; set; }
         public KhachHang ? khachHang { get; set; }
         public virtual ICollection<HoaDonChiTiet> HoaDonChiTietsId { get; set; } = new List<HoaDonChiTiet>();
+
 
     }
 

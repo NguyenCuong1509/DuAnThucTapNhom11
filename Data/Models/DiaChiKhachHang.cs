@@ -22,5 +22,6 @@ namespace Data.Models
 
         public KhachHang KhachHang { get; set; }
 
+
     }
 }
