@@ -82,7 +82,11 @@ namespace Data.Models
 
                 .HasForeignKey(h => h.VoucherId)
                 .OnDelete(DeleteBehavior.SetNull);
-
+            modelBuilder.Entity<KhachHang>()
+           .HasOne(kh => kh.TaiKhoan)
+           .WithMany()
+           .HasForeignKey(kh => kh.TaiKhoanId)
+           .OnDelete(DeleteBehavior.Restrict);
         }
         public DbSet<TaiKhoan> TaiKhoans { get; set; }
         public DbSet<ChucVu> ChucVus { get; set; }
