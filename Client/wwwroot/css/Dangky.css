@@ -1,0 +1,124 @@
+
+.hr-with-text {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    line-height: 0;
+    margin: 30px auto;
+    width: 350px;
+
+}
+
+
+.hr-with-text span {
+    background: #fff;
+    padding: 0 10px;
+    font-weight: 400 ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #797979;
+    box-shadow: 4px 4px 10px #d3d3d3
+}
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 350px;
+    padding: 12px 20px;
+    margin: 12px auto;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #f7f7f7;
+}
+
+.login-button img {
+    height: 24px;
+    width: 24px;
+    margin-right: 12px;
+}
+.container {
+    background-image: url(../lib/img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+.form-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    margin: -20px 0 0px;
+}
+.box {
+    background-color: white;
+    border-radius: 5px;
+}
+.content {
+    padding: 15% 40px 1% 40px;
+}
+.p1{
+    font-weight: bolder;
+    font-size: 200%;
+    height: 41px;
+}
+.p2 {
+    color: #888888;
+    font-size: 80%;
+}
+.p2 a{
+    text-decoration: none;
+    color: #00575C;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.title-text {
+    padding-bottom: 10px;
+}
+
+.input_register .login-button{
+    margin: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00575C;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer-text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 20px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.login-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.footer-text a {
+    text-decoration: none;  
+    color: #00575C;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
